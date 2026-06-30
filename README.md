@@ -3,7 +3,7 @@
 Repository ini dibuat sebagai tugas mata kuliah **Fisika Komputasi**. Proyek ini mengimplementasikan **Model Ising 2 Dimensi (2D)** menggunakan **Algoritma Metropolis (Monte Carlo)** untuk mempelajari fenomena **transisi fasa**, **magnetisasi spontan**, dan perubahan perilaku sistem pada berbagai kondisi suhu.
 
 ## Link Visit live
-https://felikssamosir1-glitch.github.io/simulasi-model-ising-2d/
+(https://reihan01241020.github.io/simulasi-model-ising-2d/)
 
 ---
 
