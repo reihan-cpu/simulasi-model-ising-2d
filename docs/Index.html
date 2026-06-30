@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Model Ising 2D | Kelompok Barcelona</title>
+    <style>
+        /* TEMA HALA MADRID: Putih (White), Biru Tua (Navy), dan Emas (Gold) */
+        :root {
+            --madrid-navy: #081630;
+            --madrid-gold: #c5a059;
+            --madrid-white: #ffffff;
+            --madrid-bg: #f5f6f8;
+            --text-dark: #2d3748;
+        }
+
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            background-color: var(--madrid-bg); 
+            color: var(--text-dark);
+            margin: 0; 
+            padding: 40px 20px;
+            line-height: 1.7;
+        }
+
+        .container { 
+            background: var(--madrid-white); 
+            max-width: 900px; 
+            margin: auto; 
+            padding: 50px; 
+            border-radius: 12px; 
+            border-top: 8px solid var(--madrid-gold);
+            box-shadow: 0 10px 25px rgba(8, 22, 48, 0.1);
+        }
+
+        /* Tipografi Judul */
+        h1 { 
+            color: var(--madrid-navy); 
+            font-size: 2.5em; 
+            margin-bottom: 5px; 
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            color: var(--madrid-gold);
+            font-size: 1.2em;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 35px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h2 { 
+            color: var(--madrid-navy); 
+            border-bottom: 2px solid var(--madrid-gold); 
+            padding-bottom: 8px; 
+            margin-top: 45px; 
+            font-size: 1.5em;
+        }
+        
+        /* Tombol Link Kasus */
+        .btn-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 15px; 
+            margin-top: 30px; 
+            margin-bottom: 40px;
+        }
+        
+        a.btn-kasus { 
+            display: block; 
+            padding: 20px 15px; 
+            text-decoration: none; 
+            background: var(--madrid-navy); 
+            border: 1px solid var(--madrid-navy);
+            color: var(--madrid-white); 
+            border-radius: 8px; 
+            font-weight: bold; 
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        a.btn-kasus span {
+            color: var(--madrid-gold);
+            display: block;
+            margin-top: 5px;
+            font-size: 0.85em;
+            font-weight: normal;
+        }
+        
+        a.btn-kasus:hover { 
+            background: var(--madrid-gold); 
+            border-color: var(--madrid-gold);
+            color: var(--madrid-navy);
+            transform: translateY(-3px); 
+            box-shadow: 0 6px 12px rgba(197, 160, 89, 0.3); 
+        }
+
+        a.btn-kasus:hover span {
+            color: var(--madrid-navy);
+        }
+
+        /* Tabel Anggota */
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin-top: 20px; 
+        }
+        th { 
+            background: var(--madrid-navy); 
+            color: var(--madrid-white); 
+            padding: 12px; 
+            border: 1px solid var(--madrid-navy);
+            text-transform: uppercase;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+        }
+        td { 
+            padding: 12px; 
+            border: 1px solid #e2e8f0; 
+            text-align: center; 
+        }
+        tr:nth-child(even) { background-color: #f8fafc; }
+
+        /* List Styling */
+        ul.tech-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.tech-list li {
+            background: #f8fafc;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-left: 4px solid var(--madrid-gold);
+            border-radius: 4px;
+        }
+        ul.tech-list b {
+            color: var(--madrid-navy);
+            font-size: 1.05em;
+        }
+        
+        ol.ref-list {
+            padding-left: 20px;
+        }
+        ol.ref-list li {
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Simulasi Model Ising 2D</h1>
+    <div class="subtitle">Tugas Fisika Komputasi - Kelompok Hala Madrid</div>
+    
+    <p style="text-align: justify; font-size: 1.05em;">Proyek ini mengimplementasikan Model Ising 2 Dimensi menggunakan Algoritma Metropolis (Monte Carlo) untuk mempelajari fenomena transisi fasa, magnetisasi spontan, dan perubahan perilaku sistem pada berbagai kondisi suhu.</p>
+
+    <div class="btn-grid">
+        <a href="Kasus_1_Suhu_Rendah.html" class="btn-kasus">Kasus 1 <span>Fase Feromagnetik</span></a>
+        <a href="Kasus_2_Suhu_Sedang.html" class="btn-kasus">Kasus 2 <span>Transisi Fasa</span></a>
+        <a href="Kasus_3_Suhu_Tinggi.html" class="btn-kasus">Kasus 3 <span>Fase Paramagnetik</span></a>
+    </div>
+
+    <h2>Anggota Kelompok - Hala Madrid</h2>
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Feliks Salvador Mora Samosir</td>
+            <td>01241003</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Rehan Triandoko</td>
+            <td>01241020</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ramadhan Agda Linuwih</td>
+            <td>01231014</td>
+        </tr>
+    </table>
+
+    <h2>Teknologi dan Aplikasi yang Digunakan</h2>
+    <ul class="tech-list">
+        <li><b>Google Colab:</b> Sebagai lingkungan pemrograman Python berbasis cloud.</li>
+        <li><b>GitHub & GitHub Pages:</b> Untuk menyimpan source code, mengelola versi proyek, dan mempublikasikan hasil simulasi dalam bentuk website.</li>
+        <li><b>Python:</b> Bahasa pemrograman utama.</li>
+        <li><b>NumPy:</b> Digunakan untuk komputasi numerik, pembuatan kisi array, dan kalkulasi matematis yang efisien pada simulasi.</li>
+        <li><b>Matplotlib:</b> Digunakan untuk visualisasi hasil makrostate, konfigurasi spin (kisi 2D), dan grafik kurva magnetisasi.</li>
+    </ul>
+
+    <h2>Penggunaan AI</h2>
+    <ul class="tech-list">
+        <li><b>Chat GPT (GPT-5.5):</b> Digunakan untuk memahami konsep Model Ising 2D, memberikan penjelasan teoritis, serta membantu menyusun dokumentasi agar lebih terstruktur.</li>
+        <li><b>Google Gemini (Gemini AI 3.1 Pro):</b> Dimanfaatkan untuk mencari referensi implementasi algoritma Metropolis, memperbaiki struktur kode, dan memberikan alternatif solusi teknis.</li>
+        <li><b>Claude AI :</b> DMembantu dalam menyempurnakan analisis hasil simulasi, memberikan sudut pandang tambahan, serta memperbaiki redaksi laporan agar lebih jelas.</li>
+        <li><b>Microsoft Copilot:</b> Dipakai untuk mendukung produktivitas tim, seperti menyusun draft laporan, memformat dokumen, dan memastikan hasil akhir lebih rapi serta konsisten.</li>
+    </ul>
+
+    <h2>Referensi dan Sumber Data</h2>
+    <ol class="ref-list">
+        <li><b>Landau, D. P., & Binder, K.</b> (2014). <i>A Guide to Monte Carlo Simulations in Statistical Physics</i> (Bab 4: Ising Model and the Metropolis Algorithm). Cambridge University Press.</li>
+        <li><b>Newman, M. E. J., & Barkema, G. T.</b> (1999). <i>Monte Carlo Methods in Statistical Physics</i> (Bab 3 & 4: The Ising Model & Markov Chain Monte Carlo). Clarendon Press.</li>
+        <li><b>Rifani, Agus.</b> Modul Pembelajaran: <i>Simulasi Model Magnet dan Transisi Fasa</i>. (Bahan ajar / Modul perkuliahan).</li>
+    </ol>
+
+</div>
+
+</footer>
+</html>
